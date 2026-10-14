@@ -1,0 +1,39 @@
+# 依赖清单（骨架阶段：随实现逐步收敛版本）
+#
+# 说明：
+#   1. 正式实验前固定所有版本，并记录 CUDA / 驱动 / 推理后端，保证时延与精度结果可复现。
+#   2. 数据集与预训练权重不随仓库分发，请按各自官方许可获取。
+#   3. 量化后端需先完成小规模兼容性试验，再进入主线实验。
+
+# ---- 基础 ----
+numpy
+opencv-python
+pillow
+pyyaml
+tqdm
+
+# ---- 深度学习 ----
+torch
+torchvision
+ultralytics            # YOLOv11s 候选检测基线（VisDrone 十类微调）
+
+# ---- 图文编码与匹配 ----
+transformers           # Chinese-CLIP 文本/视觉编码器
+open_clip_torch
+
+# ---- 量化 ----
+# 训练后量化与混合精度；具体后端按实际算子支持选择
+# onnx
+# onnxruntime-gpu
+# neural-compressor
+
+# ---- 评测 ----
+scipy
+pandas
+
+# ---- 演示系统 ----
+gradio
+
+# ---- 开发 ----
+pytest
+ruff

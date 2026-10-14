@@ -85,7 +85,7 @@ cd text-guided-object-detection
 
 conda create -n tgdet python=3.10 -y
 conda activate tgdet
-pip install -r requirements.txt   # 待补充
+pip install -r requirements.txt
 ```
 
 计划中的命令行入口：
