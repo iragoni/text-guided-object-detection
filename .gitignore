@@ -1,0 +1,88 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.conda/
+
+# ---- 深度学习框架与训练产物 ----
+runs/
+outputs/
+wandb/
+lightning_logs/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.engine
+*.trt
+*.safetensors
+*.h5
+*.pb
+# 保留占位说明，避免误提交权重
+!**/weights/README.md
+
+# ---- 数据集（请按官方许可自行获取，不入库）----
+data/VisDrone2019-DET/
+data/visdrone/
+data/RefDrone/
+data/raw/
+data/processed/
+data/crops/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+*.mp4
+*.avi
+# 允许文档与示例图中的图片
+!assets/**/*.png
+!docs/**/*.png
+
+# ---- 标注与实验记录的大文件输出 ----
+*.cache
+*.pkl
+*.npz
+*.npy
+*.feather
+*.parquet
+data/index/*_full.json
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---- 编辑器与系统 ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 本地材料（开题报告原件、评审意见等，不入公开仓库）----
+开题/
+开题报告*.docx
+开题报告*.pptx
+
+# ---- 临时文件与本地产物 ----
+.dsh-tmp/
+dsh-tmp-extract.txt
+*.log
+*.tmp
+~$*
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
